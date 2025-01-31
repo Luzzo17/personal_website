@@ -266,6 +266,15 @@ footer{
     }
 }
 
+#servizi{
+    flex-direction: column;
+    align-items: center;
+    ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
 }
 
 @media screen and (max-width:750px) {
@@ -300,7 +309,7 @@ footer{
                 width: 50%;
                 padding: 0;
                 a {
-                    padding:0;
+                    padding: 10px;
                     border: none;
                     box-shadow: none;
                     text-shadow: none;
