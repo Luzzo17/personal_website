@@ -1,6 +1,6 @@
 $mainColor: #2C007E;
 /*$secColor: rgb(97, 0, 126);*/
-$backColor: rgba(0, 0, 0, 0.75);
+$backColor: rgba(0, 0, 0, 0.5);
 $shadows: inset 0px -4px 15px rgba(44, 0, 126, 0.75);
 
 *{
@@ -52,7 +52,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $backColor;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0.85) 100%);
     border-bottom: 2px solid $mainColor;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -301,7 +301,7 @@ footer{
             gap:10px;
             flex-wrap: nowrap;
             margin-top: 205px;
-            background-color: $backColor;
+            background-color: rgba(0, 0, 0, 0.85);
 
             li{
                 border: 2px solid $mainColor;
@@ -338,6 +338,7 @@ footer{
 }
 
 @media screen and (max-width: 600px) {
+    
     footer{
         flex-direction: column;
         gap:10px;
