@@ -33,6 +33,7 @@ main{
     width: 100%;
     pointer-events: none;
     user-select: none;
+    -webkit-touch-callout: none;
 }
 
 br{
@@ -85,7 +86,6 @@ nav{
     border-radius: 15px;
     box-shadow: $shadows;
     width: 250px;
-    z-index: 10;
     }
 
     a:hover{
@@ -97,6 +97,7 @@ nav{
 }
 
 .menu-logo{
+    pointer-events: none;
     width: 250px;
     position: fixed;
 }
