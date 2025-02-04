@@ -260,13 +260,9 @@ footer{
         flex-wrap:nowrap;
         width: 85%;
     }
-
-    a{
-        font-size: 1.5rem;
-    }
     
     a:hover {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -335,6 +331,13 @@ footer{
             }
         }
     }
+
+    
+    #smallFoto:hover~#fullFoto {
+        display: none;
+
+}
+
 }
 
 @media screen and (max-width: 600px) {
@@ -359,5 +362,17 @@ footer{
             margin-bottom: -45px;}
         }
 
+    }
+}
+
+@media screen and (max-width: 375px) {
+    nav{
+        li{
+            margin-top: -15px;
+        
+            a{
+                font-size: 1rem;
+            }
+        }
     }
 }
