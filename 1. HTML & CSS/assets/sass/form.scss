@@ -1,0 +1,120 @@
+@import "styles.css";
+
+$mainColor: #2C007E;
+/*$secColor: rgb(97, 0, 126);*/
+$backColor: rgba(0, 0, 0, 0.75);
+$shadows: inset 0px -4px 15px rgba(44, 0, 126, 0.75);
+
+.contactForm {
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 50px;
+    }
+}
+
+#invia{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+input{
+    background-color: $backColor;
+    border: 2px solid $mainColor;
+    box-shadow: $shadows;
+    padding: 5px;
+    font-size: 1.4rem;
+    width: 400px;
+    border-radius: 15px;
+    padding-left: 15px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+input::placeholder {
+    color: $mainColor;
+}
+input:hover{
+    box-shadow: inset 0px -4px 15px rgba(255, 255, 255, 0.75);
+    border: 2px solid white;
+}
+input:focus{
+    box-shadow: inset 0px -4px 15px rgba(255, 255, 255, 0.8);
+    border: 2px solid white;
+}
+
+
+
+label {
+    font-size: 1.7rem;
+}
+
+.messaggio{
+    display: flex;
+    align-items: flex-start;
+}
+
+textarea {
+    background-color: $backColor;
+    border-radius: 15px;
+    color: white;
+    border: 2px solid $mainColor;
+    box-shadow: $shadows;
+    min-width: 400px;
+    min-height: 200px;
+    max-height: 300px;
+    resize: vertical;
+    padding: 5px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+}
+textarea:hover{
+    box-shadow: inset 0px -4px 15px rgba(255, 255, 255, 0.75);
+    border: 2px solid white;
+}
+textarea:focus{
+    box-shadow: inset 0px -4px 15px rgba(255, 255, 255, 0.8);
+    border: 2px solid white
+}
+
+
+button{
+    background-color: $backColor;
+    border-radius: 15px;
+    color: $mainColor;
+    font-size: 2rem;
+    border: 2px solid $mainColor;
+    box-shadow: $shadows;
+    padding: 5px 20px 5px 20px;
+}
+
+button:hover{
+    box-shadow: inset 0px -4px 15px rgba(255, 255, 255, 0.75);
+    color: white;
+    border: 2px solid white;
+}
+
+@media screen and (max-width:768px) {
+    .contactForm {
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    input{
+        width: 275px;
+    }
+
+    textarea{
+        min-width: 275px;
+    }
+}
