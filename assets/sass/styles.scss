@@ -52,11 +52,11 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0.85) 100%);
-    border-bottom: 2px solid $mainColor;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0.75) 60%, rgba(0,0,0,0) 100%);
+    /**border-bottom: 2px solid $mainColor;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    box-shadow: $shadows;
+    box-shadow: $shadows;**/
     
     ul{
     display: flex;
