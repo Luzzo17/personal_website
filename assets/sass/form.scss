@@ -44,7 +44,9 @@ input:focus{
     box-shadow: inset 0px -4px 15px rgba(255, 255, 255, 0.8);
     border: 2px solid white;
 }
-
+input:invalid {
+    box-shadow: 0 0 5px red;
+}
 
 
 label {
@@ -79,7 +81,9 @@ textarea:focus{
     box-shadow: inset 0px -4px 15px rgba(255, 255, 255, 0.8);
     border: 2px solid white
 }
-
+textarea:invalid {
+    box-shadow: 0 0 5px red;
+}
 
 button{
     background-color: $backColor;
